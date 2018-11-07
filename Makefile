@@ -37,6 +37,7 @@ cutlass-test: $(obj)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean: 
+	rm cutlass-test
 	rm -rf gemm_tt_*
 	rm -rf host_results_*
 	rm -rf _*
