@@ -11,7 +11,9 @@ The purpose of the repository is to provide a centralized place for creating the
 ## Directory Structure
 
 cutlass  -\> CUTLASS 1.1 Library
+
 util     -\> Helper function derived from the CUTLASS test examples
+
 gemm-test-\> Contains the gemm-tests and supporing files
 
 ## How should I run on GPGPU-Sim?
@@ -19,15 +21,20 @@ gemm-test-\> Contains the gemm-tests and supporing files
 The following things need to be setup:
 
 CUDA toolkit installed (currently GPGPU-Sim runs reliably using CUDA 9.1 )
-You have the GPGPU-Sim 4.0 (GPGPU-Sim GitHub dev branch)
+
+You must have the GPGPU-Sim 4.0 (GPGPU-Sim GitHub dev branch)
+
 nvcc is in the path and CUDA install path is set correctly
+
 You have sourced the setup\_environment file inside the GPGPU-Sim 4.0 dev branch and build the simulator
+
 You have copied the config files from gpgpu-sim\_distribution/configs/tested-cfgs/SM7\_TITANV to the cutlass-gpgpu-sim/
 
 
 If all of the above step has been done properly then running the kernels is simple.
 
 make (Verify that executable has been linked to GPGPU-Sim by using ldd command.)
+
 ./cutlass-test (Running the tests)
 
 If you see Result Verified then everything is good to go.
