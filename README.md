@@ -20,15 +20,15 @@ gemm-test-\> Contains the gemm-tests and supporing files
 
 The following things need to be setup:
 
-CUDA toolkit installed (currently GPGPU-Sim runs reliably using CUDA 9.1 )
+	1. CUDA toolkit installed (currently GPGPU-Sim runs reliably using CUDA 9.1 )
 
-You must have the GPGPU-Sim 4.0 (GPGPU-Sim GitHub dev branch)
+	2. You must have the GPGPU-Sim 4.0 (GPGPU-Sim GitHub dev branch)
 
-nvcc is in the path and CUDA install path is set correctly
+	3. nvcc is in the path and CUDA install path is set correctly
 
-You have sourced the setup\_environment file inside the GPGPU-Sim 4.0 dev branch and build the simulator
+	4. You have sourced the setup\_environment file inside the GPGPU-Sim 4.0 dev branch and build the simulator
 
-You have copied the config files from gpgpu-sim\_distribution/configs/tested-cfgs/SM7\_TITANV to the cutlass-gpgpu-sim/
+	5. You have copied the config files from gpgpu-sim\_distribution/configs/tested-cfgs/SM7\_TITANV to the cutlass-gpgpu-sim/
 
 
 If all of the above step has been done properly then running the kernels is simple.
