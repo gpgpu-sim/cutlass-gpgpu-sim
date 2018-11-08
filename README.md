@@ -8,13 +8,13 @@ This package is meant to be run on a modern Linux distro and requires CUDA 9.0 T
 
 The purpose of the repository is to provide a centralized place for creating the cuda kernel using the CUTLASS library and executing it on GPGPU-Sim.
 
-##Directory Structure
+## Directory Structure
 
 cutlass  -\> CUTLASS 1.1 Library
 util     -\> Helper function derived from the CUTLASS test examples
 gemm-test-\> Contains the gemm-tests and supporing files
 
-##How should I run on GPGPU-Sim?
+## How should I run on GPGPU-Sim?
 
 The following things need to be setup:
 
@@ -27,9 +27,7 @@ You have copied the config files from gpgpu-sim\_distribution/configs/tested-cfg
 
 If all of the above step has been done properly then running the kernels is simple.
 
-make 
-#Verify that executable has been linked to GPGPU-Sim by using ldd command.
-#Running the tests
-./cutlass-test
+make (Verify that executable has been linked to GPGPU-Sim by using ldd command.)
+./cutlass-test (Running the tests)
 
 If you see Result Verified then everything is good to go.
