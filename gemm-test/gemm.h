@@ -83,14 +83,21 @@ static void run_gemm(
 
   Gemm::launch(params);
 
-  cudaError_t result = cudaDeviceSynchronize();
-  if(result==cudaSuccess){
-	printf("Successfully Launched\n");	
-  }
-  int save=0;
+
+  cudaError_t result;
+  do
+  { 
+	result = cudaDeviceSynchronize();
+  }while(result!=cudaSuccess);  
+  printf("Successfully Launched\n");	
+  
+  int save=1;
   int completedsuccessfully=testbed.verify_with_host(save,save);
   if (completedsuccessfully==1){
-	printf("Result Verified\n");	
+  	printf("Result Verified\n");	
+  }
+  else{
+  	printf("ERROR");	
   }
  
 }

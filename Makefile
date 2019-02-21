@@ -36,7 +36,7 @@ LDFLAGS = --gpu-architecture=compute_70 --gpu-code=compute_70 -lcudart -I$(INC_D
 cutlass-test: $(obj)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
-clean: 
+clean:
 	rm cutlass-test
 	rm -rf gemm_tt_*
 	rm -rf host_results_*
