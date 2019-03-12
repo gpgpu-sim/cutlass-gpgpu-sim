@@ -14,7 +14,7 @@ cutlass  -\> CUTLASS 1.1 Library
 
 util     -\> Helper function derived from the CUTLASS test examples
 
-gemm-test-\> Contains the gemm-tests and supporing files
+gemm-test-\> Contains the gemm-tests and supporting files
 
 ## How should I run on GPGPU-Sim?
 
